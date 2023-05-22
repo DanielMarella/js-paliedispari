@@ -11,7 +11,12 @@ Dichiariamo chi ha vinto.
 
 
 // Chiedo all'utente di scegliere pari  o dispari
-const userChoise = prompt('Pari o dispari?')
+let userChoise = prompt('Pari o dispari?')
+
+// creo un ciclo di controllo in maniera che l'utente possa scrivere solo pari o dispari
+while (userChoise !== 'pari' && userChoise !== 'dispari'){
+    userChoise = prompt('per favore inserisci pari o dispari');
+}
 console.log("l'utente ha scelto: " + userChoise)
 
 // chiedo all'utente di scrivere un numero da 1 a 5
