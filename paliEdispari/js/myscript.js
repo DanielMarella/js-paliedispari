@@ -27,7 +27,6 @@ Una parola è palindroma se i caratteri più a sx e più a dx coincidono e se la
 // Chiediamo all'utente di inserire una parola con il prompt
 const userWord = prompt('inserisci una parola');
 
-
 // creo una funzione per dire se la parola è palindroma o no
 function checkPalindrome(userWord){
     // Devo controllare se i caratteri a sx e destra coincidono, quindi creo una variabile che mi dica quanto è lunga la parola
@@ -40,7 +39,7 @@ function checkPalindrome(userWord){
     }
     return('è palindroma');
 }
-
+// assegno il valore della funzione ad una costante per richiamarla
 const palindrome = checkPalindrome(userWord);
-
+// stampo in console il valore della costante
 console.log(palindrome);
