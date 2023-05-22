@@ -20,7 +20,12 @@ while (userChoise !== 'pari' && userChoise !== 'dispari'){
 console.log("l'utente ha scelto: " + userChoise)
 
 // chiedo all'utente di scrivere un numero da 1 a 5
-const userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
+let userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
+
+// creo un ciclo di controllo in maniera che l'utente possa scrivere solo un numero tra 1 e 5
+while (userNumber > 5 || userNumber < 1){
+    userNumber = parseInt(prompt('per favore inserisci un numero tra 1 e 5'));
+}
 console.log("l'utente ha scelto il numero " + userNumber);
 
 // creiamo un funzione per il numero randomico del computer
