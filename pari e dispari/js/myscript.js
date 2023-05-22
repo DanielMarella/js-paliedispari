@@ -18,7 +18,6 @@ const userChoise = prompt('Pari o dispari?')
 const userNumber = prompt ('inserisci un numero da 1 a 5');
 
 // creiamo un numero randomico da 1 a 5 per il computer
-
 const computerNumber = Math.floor((Math.random() * 5) + 1);
 console.log(computerNumber);
 
