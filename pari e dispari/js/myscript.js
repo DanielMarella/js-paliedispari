@@ -33,3 +33,9 @@ console.log('il computer ha scelto il numero: ' + computerNumber);
 let sumNumber = 0;
 sumNumber = computerNumber + userNumber;
 console.log(sumNumber);
+
+if (sumNumber % 2 == 0){
+    console.log('il numero è pari')
+}else {
+    console.log('il numero è dispari')
+}
