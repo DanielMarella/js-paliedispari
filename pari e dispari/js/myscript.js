@@ -33,6 +33,14 @@ function roundNumber (min, max){
     return Math.floor((Math.random() * max) + min);
 }
 
+// funzione per vedere se la somma dei numeri è pari
+function isEven(number){
+    if (number % 2 == 0){
+        return true
+    }
+    return false
+}
+
 // creiamo un numero randomico da 1 a 5 per il computer
 const computerNumber = roundNumber(1, 5);
 console.log('il computer ha scelto il numero: ' + computerNumber);
@@ -46,7 +54,7 @@ console.log('la somma dei due numeri è: ' + sumNumber);
 let winner = '';
 
 // se il numero è pari, cambio il valore di winner in pari
-if (sumNumber % 2 == 0){
+if (isEven(sumNumber)){
     console.log('il numero è pari');
     winner = 'pari'
 }
