@@ -44,7 +44,6 @@ console.log('la somma dei due numeri è: ' + sumNumber);
 
 // creo una varibile dandoli come valore una stringa vuota
 let winner = '';
-let looser = '';
 
 // se il numero è pari, cambio il valore di winner in pari
 if (sumNumber % 2 == 0){
